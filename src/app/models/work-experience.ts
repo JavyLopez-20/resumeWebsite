@@ -1,8 +1,8 @@
 export interface WorkExperience {
-    name: string;
+    companyName: string;
     title: string;
-    startDate: number;
-    endDate: number;
+    startDate: string;
+    endDate: string;
     description: string;
     reasonForLeaving?: string;
 }
