@@ -7,7 +7,7 @@ import { WorkExperience } from "./work-experience";
 export interface Resume {
     name: string;
     email: string;
-    number: number;
+    number: string;
     githubLink: string;
     linkedInLink: string;
 

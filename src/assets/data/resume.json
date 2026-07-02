@@ -1,16 +1,16 @@
 {
     "name": "Javier Lopez",
     "email": "jlopez.dev.8@gmail.com",
-    "number": 9563377149,
+    "number": "9563377149",
     "githubLink": "https://github.com/JavyLopez-20",
     "linkedInLink": "https://www.linkedin.com/in/javier-lopez-619926157/",
 
     "workExperience": [{
-        "companyName": "",
-        "title": "",
-        "startDate": "",
-        "endDate": "",
-        "description": "",
+        "companyName": "H-E-B",
+        "title": "Meat Market ADM",
+        "startDate": "09/2019",
+        "endDate": "current",
+        "description": "Meat Market ADM assists the department manager in operations including customer and parter relations, merchandising, and financial performance",
         "reasonForLeaving": ""
     }],
 
@@ -20,16 +20,16 @@
         "fieldOfStudy": "",
         "graduationYear": 0
     }],
-    "skills": [{
+    "skills": {
         "languages": [],
         "frameworks": [],
         "tools": [],
         "databases": []
-    }],
-    "learning": [{
+    },
+    "learning": {
         "languages": [],
         "tools": []
-    }],
+    },
     "projects": [{
         "name": "",
         "techStack": [],
