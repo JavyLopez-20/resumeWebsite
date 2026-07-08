@@ -50,7 +50,7 @@ export class ResumeData implements Resume {
     constructor(
     public name: string,
     public email: string,
-    public number: number,
+    public number: string,
     public githubLink: string,
     public linkedInLink: string,
 

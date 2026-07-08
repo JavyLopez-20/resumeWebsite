@@ -10,31 +10,31 @@
         "title": "Meat Market ADM",
         "startDate": "09/2019",
         "endDate": "current",
-        "description": "Meat Market ADM assists the department manager in operations including customer and parter relations, merchandising, and financial performance",
+        "description": "Meat Market ADM assists the department manager in operations including customer and partner relations, merchandising, and financial performance",
         "reasonForLeaving": ""
     }],
 
     "education": [{
-        "schoolName": "",
-        "degree": "",
-        "fieldOfStudy": "",
-        "graduationYear": 0
+        "schoolName": "UTSA",
+        "degree": "Full-Stack Software Engineer",
+        "fieldOfStudy": "Full-Stack Software Engineer Program",
+        "graduationYear": 2025
     }],
     "skills": {
-        "languages": [],
-        "frameworks": [],
-        "tools": [],
-        "databases": []
+        "languages": ["Javascript", "Java", "Typescript", "Python"],
+        "frameworks": ["React", "Node.js", "Express.js", "Angular"],
+        "tools": ["GitHub", "VSCode", "IntelliJ IDE"],
+        "databases": ["PostgreSQL(SQL)", "MongoDB(NoSQL)"]
     },
     "learning": {
-        "languages": [],
-        "tools": []
+        "languages": ["C#"],
+        "tools": ["Docker"]
     },
     "projects": [{
-        "name": "",
-        "techStack": [],
-        "shortDescription": "",
-        "githubLink": "",
-        "liveLink": ""
+        "name": "GrubGuide (Solo App)",
+        "techStack": ["MongoDB, Express.js, React, Node.js (MERN)"],
+        "shortDescription": "A full-stack restaurant finder web application that leverages FourSqauare api and allows users to search for restaurants and cuisines by location. Users can manually enter a location or use geolocation to automatically find restaurants nearby. Built with the MERN stack and deployed on Render.",
+        "githubLink": "https://github.com/JavyLopez-20/GrubGuide",
+        "liveLink": "grubguide.onrender.com/"
     }]
 }
