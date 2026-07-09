@@ -1,1 +1,61 @@
-<p>resume works!</p>
+<div>
+    <h1>{{ resumeData?.name }}</h1>
+    <p>Email: {{ resumeData?.email }}</p>
+    <p>Phone Number: {{ resumeData?.number }}</p>
+    <a [href]="resumeData?.githubLink" target="_blank">View GitHub</a>
+    <a [href]="resumeData?.linkedInLink" target="_blank">View LinkedIn</a>
+</div>
+<h3>Work Experience: </h3>
+@for (job of resumeData?.workExperience; track job.companyName) {
+<div>
+    <h3>{{ job.companyName }}</h3>
+    <p>{{ job.title }}</p>
+    <p>{{ job.startDate }} - {{ job.endDate }}</p>
+    <p>{{ job.description }}</p>
+</div>
+}
+<h3>Education: </h3>
+@for (school of resumeData?.education; track school.schoolName) {
+<div>
+    <h3>{{ school.schoolName }}</h3>
+    <p>{{ school.degree }}</p>
+    <p>{{ school.fieldOfStudy }}</p>
+    <p>{{ school.graduationYear }}</p>
+</div>
+}
+<h3>Skills: </h3>
+@for (skill of resumeData?.skills?.languages; track $index) {
+<span>{{ skill }}</span>
+}
+<h3>Frameworks:</h3>
+@for (framework of resumeData?.skills?.frameworks; track $index) {
+<span>{{ framework }}</span>
+}
+<h3>Tools:</h3>
+@for (tool of resumeData?.skills?.tools; track $index) {
+<span>{{ tool }}</span>
+}
+<h3>Databases:</h3>
+@for (database of resumeData?.skills?.databases; track $index) {
+<span>{{ database }}</span>
+}
+
+<h3>Learning Languages:</h3>
+@for (learn of resumeData?.learning?.languages; track $index) {
+    <span>{{ learn }}</span>
+}
+<h3>Learning Tools:</h3>
+@for (tool of resumeData?.learning?.tools; track $index) {
+    <span>{{ tool }}</span>
+}
+
+<h3>Projects:</h3>
+@for (project of resumeData?.projects; track project.name) {
+<div>
+    <h3>{{ project.name }}</h3>
+    <p>{{ project.techStack }}</p>
+    <p>{{ project.shortDescription }}</p>
+    <p>{{ project.githubLink }}</p>
+    <p>{{ project.liveLink }}</p>
+</div>
+}

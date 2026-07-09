@@ -9,6 +9,6 @@ export class ResumeDataService {
   private http = inject(HttpClient)
 
   getResumeData() {
-    return this.http.get<Resume>('assets/data/resume.json')
+    return this.http.get<Resume>('data/resume.json')
   }
 }
