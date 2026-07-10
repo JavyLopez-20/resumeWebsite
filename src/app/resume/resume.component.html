@@ -4,6 +4,9 @@
     <p>Phone Number: {{ resumeData?.number }}</p>
     <a [href]="resumeData?.githubLink" target="_blank">View GitHub</a>
     <a [href]="resumeData?.linkedInLink" target="_blank">View LinkedIn</a>
+    <a href="../../../public/data/resume.pdf" download="Javier_Lopez_Resume.pdf">
+        <button>Download Resume</button>
+    </a>
 </div>
 <h3>Work Experience: </h3>
 @for (job of resumeData?.workExperience; track job.companyName) {
