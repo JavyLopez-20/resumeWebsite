@@ -69,7 +69,7 @@
     <div class="card-body">
 <h3 class="card-title">Skills: </h3>
 @for (skill of resumeData?.skills?.languages; track $index) {
-<span>{{ skill }}</span>
+<span class="card-body">{{ skill }}</span>
 }
 </div>
 </div>
@@ -85,23 +85,27 @@
 
 <div class="card" style="width: 30rem;">
     <img src="" alt="Tools picture">
-    <div class="card-body"></div>
+    <div class="card-body">
     <h3 class="card-title">Tools:</h3>
     @for (tool of resumeData?.skills?.tools; track $index) {
-        <span>{{ tool }}</span>
+        <span class="card-body">{{ tool }}</span>
     }
+    </div>
 </div>
 
 <div class="card" style="width: 30rem;">
 <img src="" alt="Database picture">
+<div class="card-body">
 <h3 class="card-title">Databases:</h3>
 @for (database of resumeData?.skills?.databases; track $index) {
     <span class="card-body">{{ database }}</span>
 }
 </div>
+</div>
 
 <div class="card" style="width: 30rem;">
 <img src="" alt="Learning picture">
+<div class="card-body">
 <h3 class="card-title">Learning Languages and Tools:</h3>
 @for (learn of resumeData?.learning?.languages; track $index) {
     <span class="card-body">{{ learn }}</span>
@@ -109,6 +113,7 @@
 @for (tool of resumeData?.learning?.tools; track $index) {
     <span>{{ tool }}</span>
 }
+</div>
 </div>
 
 </div>
