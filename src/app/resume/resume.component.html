@@ -1,23 +1,56 @@
-<div>
+<header class="text-center text-white bg-dark">
     <h1>{{ resumeData?.name }}</h1>
     <p>Email: {{ resumeData?.email }}</p>
     <p>Phone Number: {{ resumeData?.number }}</p>
+    <div class="d-flex justify-content-between align-items-end">
     <a [href]="resumeData?.githubLink" target="_blank">View GitHub</a>
     <a [href]="resumeData?.linkedInLink" target="_blank">View LinkedIn</a>
     <a href="../../../public/data/resume.pdf" download="Javier_Lopez_Resume.pdf">
         <button>Download Resume</button>
     </a>
 </div>
-<h3>Work Experience: </h3>
+</header>
+
+
+<main>
+<div class="container text-center">
+<div class="row">
+
+<div class="col">
+    <div class="card" style="width: 30rem;">
+    <img src="https://newsroom.heb.com/wp-content/uploads/2018/02/Mueller_20-_20Ray_20Briggs_20Photographer_preview_jpeg.jpg" class="card-image-top" alt="H-E-B image">
+    <div class="card-body">
+<h3 class="card-title">Work Experience: </h3>
 @for (job of resumeData?.workExperience; track job.companyName) {
-<div>
-    <h3>{{ job.companyName }}</h3>
-    <p>{{ job.title }}</p>
-    <p>{{ job.startDate }} - {{ job.endDate }}</p>
-    <p>{{ job.description }}</p>
+    <h5>{{ job.companyName }}</h5>
+    <p class="card-text">{{ job.title }}</p>
+    <p class="card-text">{{ job.startDate }} - {{ job.endDate }}</p>
+    <p class="card-text">{{ job.description }}</p>
+}
+</div>
+</div>
+
+<div class="card" style="width: 30rem;">
+<img src="" alt="Project picture">
+<h3 class="card-title">Projects:</h3>
+@for (project of resumeData?.projects; track project.name) {
+<div class="card-body">
+    <h3>{{ project.name }}</h3>
+    <p>{{ project.techStack }}</p>
+    <p>{{ project.shortDescription }}</p>
+    <p>{{ project.githubLink }}</p>
+    <p>{{ project.liveLink }}</p>
 </div>
 }
-<h3>Education: </h3>
+</div>
+</div>
+
+
+<div class="col">
+<div class="card" style="width: 30rem;">
+    <img src="https://seeklogo.com/vector-logo/411677/utsa-roadrunners" alt="UTSA logo">
+    <div class="card-body">
+        <h3 class="card-title">Education: </h3>
 @for (school of resumeData?.education; track school.schoolName) {
 <div>
     <h3>{{ school.schoolName }}</h3>
@@ -26,39 +59,58 @@
     <p>{{ school.graduationYear }}</p>
 </div>
 }
-<h3>Skills: </h3>
+</div>
+</div>
+
+<div class="card" style="width: 30rem;">
+    <img src="" alt="Skill picture">
+    <div class="card-body">
+<h3 class="card-title">Skills: </h3>
 @for (skill of resumeData?.skills?.languages; track $index) {
 <span>{{ skill }}</span>
 }
-<h3>Frameworks:</h3>
+</div>
+</div>
+<div class="card" style="width: 30rem;">
+    <img src="" alt="Framework picture">
+    <div class="card-body">
+<h3 class="card-title">Frameworks:</h3>
 @for (framework of resumeData?.skills?.frameworks; track $index) {
-<span>{{ framework }}</span>
+<span class="card-body">{{ framework }}</span>
 }
-<h3>Tools:</h3>
-@for (tool of resumeData?.skills?.tools; track $index) {
-<span>{{ tool }}</span>
-}
-<h3>Databases:</h3>
-@for (database of resumeData?.skills?.databases; track $index) {
-<span>{{ database }}</span>
-}
+</div>
+</div>
 
-<h3>Learning Languages:</h3>
-@for (learn of resumeData?.learning?.languages; track $index) {
-    <span>{{ learn }}</span>
+<div class="card" style="width: 30rem;">
+    <img src="" alt="Tools picture">
+    <div class="card-body"></div>
+    <h3 class="card-title">Tools:</h3>
+    @for (tool of resumeData?.skills?.tools; track $index) {
+        <span>{{ tool }}</span>
+    }
+</div>
+
+<div class="card" style="width: 30rem;">
+<img src="" alt="Database picture">
+<h3 class="card-title">Databases:</h3>
+@for (database of resumeData?.skills?.databases; track $index) {
+    <span class="card-body">{{ database }}</span>
 }
-<h3>Learning Tools:</h3>
+</div>
+
+<div class="card" style="width: 30rem;">
+<img src="" alt="Learning picture">
+<h3 class="card-title">Learning Languages and Tools:</h3>
+@for (learn of resumeData?.learning?.languages; track $index) {
+    <span class="card-body">{{ learn }}</span>
+}
 @for (tool of resumeData?.learning?.tools; track $index) {
     <span>{{ tool }}</span>
 }
-
-<h3>Projects:</h3>
-@for (project of resumeData?.projects; track project.name) {
-<div>
-    <h3>{{ project.name }}</h3>
-    <p>{{ project.techStack }}</p>
-    <p>{{ project.shortDescription }}</p>
-    <p>{{ project.githubLink }}</p>
-    <p>{{ project.liveLink }}</p>
 </div>
-}
+
+</div>
+</div>
+</div>
+
+</main>
