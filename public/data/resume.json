@@ -35,6 +35,12 @@
         "techStack": ["MongoDB, Express.js, React, Node.js (MERN)"],
         "shortDescription": "A full-stack restaurant finder web application that leverages FourSqauare api and allows users to search for restaurants and cuisines by location. Users can manually enter a location or use geolocation to automatically find restaurants nearby. Built with the MERN stack and deployed on Render.",
         "githubLink": "https://github.com/JavyLopez-20/GrubGuide",
-        "liveLink": "grubguide.onrender.com/"
+        "liveLink": "https://grubguide.onrender.com"
+    },{
+        "name": "Resume Website",
+        "techStack": ["Angular, Typescript, Bootstrap, HTML/CSS"],
+        "shortDescription": "A personal resume website built with Angular featuring dynamic data binding via HttpClient, responsive Bootstrap layout, and dark/light mode toggle. Data is served from a JSON file and mapped to TypeScript interfaces and classes.",
+        "githubLink": "https://github.com/JavyLopez-20/ResumeWebsite",
+        "liveLink": ""
     }]
 }

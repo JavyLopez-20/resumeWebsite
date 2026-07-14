@@ -38,8 +38,10 @@
     <h3>{{ project.name }}</h3>
     <p>{{ project.techStack }}</p>
     <p>{{ project.shortDescription }}</p>
-    <p>{{ project.githubLink }}</p>
-    <p>{{ project.liveLink }}</p>
+    <div class="d-flex justify-content-between">
+    <a [href]="project.githubLink" target="_blank">View GitHub</a>
+    <a [href]="project.liveLink" target="_blank">View Deployed Link</a>
+    </div>
 </div>
 }
 </div>
