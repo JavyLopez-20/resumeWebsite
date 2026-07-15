@@ -1,24 +1,41 @@
-<header class="text-center text-white bg-dark">
+<header class="bg-primary p-3 d-flex align-items-stretch justify-content-between">
+
+    <div>
+    <img src="data/IMG_2914.png" alt="Profile Picture"
+    style="width: 140px; height: 140px; border-radius: 50%; object-fit: fill;">
+    </div>
+
+    <div class="text-center">
     <h1>{{ resumeData?.name }}</h1>
     <p>Email: {{ resumeData?.email }}</p>
     <p>Phone Number: {{ resumeData?.number }}</p>
-    <div class="d-flex justify-content-between align-items-end">
-    <a [href]="resumeData?.githubLink" target="_blank">View GitHub</a>
-    <a [href]="resumeData?.linkedInLink" target="_blank">View LinkedIn</a>
+    </div>
+
+    <div class="d-flex align-items-end justify-content-end">
+    <a [href]="resumeData?.githubLink" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/github/github-original.svg" style="width: 40px;"></a>
+    <a [href]="resumeData?.linkedInLink" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/7330accdbc47e2dc0c19789a48533c4a3c50fe58/icons/linkedin/linkedin-original.svg" style="width: 40px;"></a>
     <a href="../../../public/data/resume.pdf" download="Javier_Lopez_Resume.pdf">
         <button>Download Resume</button>
     </a>
+    <button (click) ="toggleTheme()">
+            @if (isDarkMode) {
+                ☀️
+            } @else {
+                🌙
+            }
+        </button>
 </div>
+
 </header>
 
 
-<main>
-<div class="container text-center">
-<div class="row">
+<main class="bg-dark">
+<div class="container-fluid text-center">
+<div class="row align-items-stretch">
 
-<div class="col">
-    <div class="card" style="width: 30rem;">
-    <img src="https://newsroom.heb.com/wp-content/uploads/2018/02/Mueller_20-_20Ray_20Briggs_20Photographer_preview_jpeg.jpg" class="card-image-top" alt="H-E-B image">
+<div class="col-12 col-md-8">
+    <div class="card w-100 mb-3">
+    <img src="data/icons/grocery-cart.png" style="width: 140px; height: 140px;" alt="H-E-B image">
     <div class="card-body">
 <h3 class="card-title">Work Experience: </h3>
 @for (job of resumeData?.workExperience; track job.companyName) {
@@ -30,8 +47,9 @@
 </div>
 </div>
 
-<div class="card" style="width: 30rem;">
-<img src="" alt="Project picture">
+<div class="card w-100 mb-3">
+<img src="data/icons/project-food.png" alt="Project picture" 
+style="width: 140px; height: 140px; border-radius: 50%;">
 <h3 class="card-title">Projects:</h3>
 @for (project of resumeData?.projects; track project.name) {
 <div class="card-body">
@@ -48,9 +66,9 @@
 </div>
 
 
-<div class="col">
-<div class="card" style="width: 30rem;">
-    <img src="https://seeklogo.com/vector-logo/411677/utsa-roadrunners" alt="UTSA logo">
+<div class="col-12 col-md-4">
+<div class="card w-100 mb-3">
+    <img src="data/icons/education-cap.png" style="width: 140px; height: 140px;" alt="Education logo">
     <div class="card-body">
         <h3 class="card-title">Education: </h3>
 @for (school of resumeData?.education; track school.schoolName) {
@@ -64,8 +82,8 @@
 </div>
 </div>
 
-<div class="card" style="width: 30rem;">
-    <img src="" alt="Skill picture">
+<div class="card w-100 mb-3">
+    <img src="data/icons/skills-computer.png" style="width: 140px; height: 140px;" alt="Skill picture">
     <div class="card-body">
 <h3 class="card-title">Skills: </h3>
 @for (skill of resumeData?.skills?.languages; track $index) {
@@ -73,8 +91,8 @@
 }
 </div>
 </div>
-<div class="card" style="width: 30rem;">
-    <img src="" alt="Framework picture">
+<div class="card w-100 mb-3">
+    <img src="data/icons/framework.png" style="width: 140px; height: 140px;" alt="Framework picture">
     <div class="card-body">
 <h3 class="card-title">Frameworks:</h3>
 @for (framework of resumeData?.skills?.frameworks; track $index) {
@@ -83,8 +101,8 @@
 </div>
 </div>
 
-<div class="card" style="width: 30rem;">
-    <img src="" alt="Tools picture">
+<div class="card w-100 mb-3">
+    <img src="data/icons/tools.png" style="width: 140px; height: 140px;" alt="Tools picture">
     <div class="card-body">
     <h3 class="card-title">Tools:</h3>
     @for (tool of resumeData?.skills?.tools; track $index) {
@@ -93,8 +111,8 @@
     </div>
 </div>
 
-<div class="card" style="width: 30rem;">
-<img src="" alt="Database picture">
+<div class="card w-100 mb-3">
+<img src="data/icons/database.png" style="width: 140px; height: 140px;" alt="Database picture">
 <div class="card-body">
 <h3 class="card-title">Databases:</h3>
 @for (database of resumeData?.skills?.databases; track $index) {
@@ -103,8 +121,8 @@
 </div>
 </div>
 
-<div class="card" style="width: 30rem;">
-<img src="" alt="Learning picture">
+<div class="card w-100 mb-3">
+<img src="data/icons/learning-book.png" style="width: 140px; height: 140px;" alt="Learning picture">
 <div class="card-body">
 <h3 class="card-title">Learning Languages and Tools:</h3>
 @for (learn of resumeData?.learning?.languages; track $index) {

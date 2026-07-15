@@ -16,9 +16,9 @@
 
     "education": [{
         "schoolName": "UTSA",
-        "degree": "Full-Stack Software Engineer",
-        "fieldOfStudy": "Full-Stack Software Engineer Program",
-        "graduationYear": 2025
+        "degree": "Degree: Full-Stack Software Engineer",
+        "fieldOfStudy": "Field of Study: Full-Stack Software Engineer Program",
+        "graduationYear": "Graduation Year: 2025"
     }],
     "skills": {
         "languages": ["Javascript", "Java", "Typescript", "Python"],
@@ -33,7 +33,7 @@
     "projects": [{
         "name": "GrubGuide (Solo App)",
         "techStack": ["MongoDB, Express.js, React, Node.js (MERN)"],
-        "shortDescription": "A full-stack restaurant finder web application that leverages FourSqauare api and allows users to search for restaurants and cuisines by location. Users can manually enter a location or use geolocation to automatically find restaurants nearby. Built with the MERN stack and deployed on Render.",
+        "shortDescription": "A full-stack restaurant finder web application that leverages FourSqauare api and allows users to search for restaurants and cuisines by location. Users can manually enter a location or use geolocation to automatically find restaurants nearby. Built with the MERN stack and deployed on Render.README.md on GitHub, visit link to learn more about the website or visit deployed link, deployed on Render",
         "githubLink": "https://github.com/JavyLopez-20/GrubGuide",
         "liveLink": "https://grubguide.onrender.com"
     },{

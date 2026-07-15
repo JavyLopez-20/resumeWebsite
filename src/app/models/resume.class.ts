@@ -43,7 +43,7 @@ export class EducationData implements Education {
     public schoolName: string,
     public degree: string,
     public fieldOfStudy: string,
-    public graduationYear: number,
+    public graduationYear: string,
     ) {}
 }
 export class ResumeData implements Resume {

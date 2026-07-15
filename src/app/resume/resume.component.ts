@@ -11,10 +11,17 @@ import { Resume } from '../models/resume';
 export class ResumeComponent implements OnInit {
   private ResumeService = inject(ResumeDataService)
   resumeData: Resume | null = null;
+  isDarkMode = true;
+
   ngOnInit(): void {
     this.ResumeService.getResumeData().subscribe(data => {
       this.resumeData = data
     })
+  }
+
+  toggleTheme() {
+    this.isDarkMode = !this.isDarkMode;
+    document.documentElement.setAttribute('data-bs-theme', this.isDarkMode ? 'dark' : 'light')
   }
 
 }
