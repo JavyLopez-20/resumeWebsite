@@ -41,6 +41,6 @@
         "techStack": ["Angular, Typescript, Bootstrap, HTML/CSS"],
         "shortDescription": "A personal resume website built with Angular featuring dynamic data binding via HttpClient, responsive Bootstrap layout, and dark/light mode toggle. Data is served from a JSON file and mapped to TypeScript interfaces and classes.",
         "githubLink": "https://github.com/JavyLopez-20/ResumeWebsite",
-        "liveLink": ""
+        "liveLink": "https://javylopez-20.github.io/resumeWebsite/resume"
     }]
 }
