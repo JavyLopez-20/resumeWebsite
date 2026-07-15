@@ -1,0 +1,46 @@
+{
+    "name": "Javier Lopez",
+    "email": "jlopez.dev.8@gmail.com",
+    "number": "9563377149",
+    "githubLink": "https://github.com/JavyLopez-20",
+    "linkedInLink": "https://www.linkedin.com/in/javier-lopez-619926157/",
+
+    "workExperience": [{
+        "companyName": "H-E-B",
+        "title": "Meat Market ADM",
+        "startDate": "09/2019",
+        "endDate": "current",
+        "description": "Meat Market ADM assists the department manager in operations including customer and partner relations, merchandising, and financial performance",
+        "reasonForLeaving": ""
+    }],
+
+    "education": [{
+        "schoolName": "UTSA",
+        "degree": "Degree: Full-Stack Software Engineer",
+        "fieldOfStudy": "Field of Study: Full-Stack Software Engineer Program",
+        "graduationYear": "Graduation Year: 2025"
+    }],
+    "skills": {
+        "languages": ["Javascript", "Java", "Typescript", "Python"],
+        "frameworks": ["React", "Node.js", "Express.js", "Angular"],
+        "tools": ["GitHub", "VSCode", "IntelliJ IDE"],
+        "databases": ["PostgreSQL(SQL)", "MongoDB(NoSQL)"]
+    },
+    "learning": {
+        "languages": ["C#"],
+        "tools": ["Docker"]
+    },
+    "projects": [{
+        "name": "GrubGuide (Solo App)",
+        "techStack": ["MongoDB, Express.js, React, Node.js (MERN)"],
+        "shortDescription": "A full-stack restaurant finder web application that leverages FourSqauare api and allows users to search for restaurants and cuisines by location. Users can manually enter a location or use geolocation to automatically find restaurants nearby. Built with the MERN stack and deployed on Render.README.md on GitHub, visit link to learn more about the website or visit deployed link, deployed on Render",
+        "githubLink": "https://github.com/JavyLopez-20/GrubGuide",
+        "liveLink": "https://grubguide.onrender.com"
+    },{
+        "name": "Resume Website",
+        "techStack": ["Angular, Typescript, Bootstrap, HTML/CSS"],
+        "shortDescription": "A personal resume website built with Angular featuring dynamic data binding via HttpClient, responsive Bootstrap layout, and dark/light mode toggle. Data is served from a JSON file and mapped to TypeScript interfaces and classes.",
+        "githubLink": "https://github.com/JavyLopez-20/ResumeWebsite",
+        "liveLink": ""
+    }]
+}
